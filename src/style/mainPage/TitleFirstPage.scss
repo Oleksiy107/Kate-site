@@ -1,0 +1,31 @@
+.AboutBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  gap: 2vw;
+  padding: 4vw 10vw;
+  &__title {
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   padding: 4vw 8vw;
+}
+@media screen and (max-width: 425px) {
+  .AboutBox {
+    gap: 4vw;
+    align-items: center;
+    padding: 10vw 8vw;
+
+    &__title {
+      font-size: 5vw;
+    }
+    &__subText {
+      font-size: 4vw;
+      text-align: center;
+    }
+  }
+}

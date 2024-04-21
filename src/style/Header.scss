@@ -1,0 +1,51 @@
+$colorLink: #000;
+@mixin flexHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6vw;
+}
+.HeaderBox {
+  padding: 4vw;
+  &__HeaderNav {
+    @include flexHeader();
+  }
+}
+.HeaderNav {
+  &__logo {
+    border-radius: 50%;
+    width: 100px;
+  }
+  &__listNav {
+    @include flexHeader();
+  }
+}
+.HeaderNav {
+  &__listNav {
+    font-size: 2vw;
+    color: $colorLink;
+  }
+  &__link {
+    color: $colorLink;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .HeaderNav {
+    &__listNav {
+      font-size: 2.2vw;
+    }
+  }
+}
+@media screen and (max-width: 605px) {
+  .HeaderBox {
+    &__HeaderNav {
+      flex-direction: column;
+    }
+  }
+  .HeaderNav {
+    &__listNav {
+      font-size: 4vw;
+      flex-direction: column;
+    }
+  }
+}

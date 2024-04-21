@@ -1,0 +1,130 @@
+.BrieflyInterviewBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vw;
+  padding: 4vw;
+
+  &__title {
+    align-items: center;
+    font-size: 1.5vw;
+  }
+  &__text {
+    font-size: 1.2vw;
+  }
+  &__wrapBlock {
+    display: grid;
+    gap: 8vw;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  &__innerWrap {
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+
+    padding: 0 2vw;
+  }
+  &__interviewBlock {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background: #e7ecef;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    padding: 0vw 0 2vw 0vw;
+  }
+  &__img {
+    padding: 0 4vw;
+    height: 30vw;
+    width: 100%;
+  }
+  &__link {
+    text-align: center;
+  }
+  &__button-84 {
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: expo-brand-demi, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+    font-size: 18px;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 28px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button-84:hover {
+    box-shadow: rgba(0, 1, 0, 0.2) 0 2px 8px;
+    opacity: 0.85;
+  }
+
+  .button-84:active {
+    outline: 0;
+  }
+
+  .button-84:focus {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 3px;
+  }
+
+  @media (max-width: 420px) {
+    .button-84 {
+      height: 38px;
+    }
+  }
+}
+@media screen and (max-width: 905px) {
+  .BrieflyInterviewBox {
+    &__title {
+      font-size: 2.5vw;
+    }
+    &__text {
+      font-size: 2.2vw;
+    }
+  }
+}
+@media screen and (max-width: 625px) {
+  .BrieflyInterviewBox {
+    &__img {
+      padding: 0 4vw;
+      height: auto;
+      width: 100%;
+    }
+    &__title {
+      font-size: 5vw;
+      text-align: center;
+    }
+    &__text {
+      font-size: 4vw;
+    }
+    &__wrapBlock {
+      display: grid;
+      gap: 8vw;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
