@@ -7,7 +7,7 @@
   padding: 4vw 10vw;
   &__title {
     text-align: center;
-    font-size: 3vw;
+    font-size: $fontSize3;
   }
 
   //   flex-direction: column;
@@ -24,7 +24,7 @@
       font-size: 5vw;
     }
     &__subText {
-      font-size: 4vw;
+      font-size: $fontSize4;
       text-align: center;
     }
   }

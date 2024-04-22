@@ -29,13 +29,6 @@ $colorLink: #000;
     color: $colorLink;
   }
 }
-@media screen and (max-width: 1025px) {
-  .HeaderNav {
-    &__listNav {
-      font-size: 2.2vw;
-    }
-  }
-}
 @media screen and (max-width: 605px) {
   .HeaderBox {
     &__HeaderNav {

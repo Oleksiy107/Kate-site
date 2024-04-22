@@ -60,7 +60,7 @@
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
       "Noto Color Emoji";
     font-size: 18px;
-    height: 48px;
+    height: 40px;
     justify-content: center;
     line-height: 1;
     margin: 0;
@@ -90,12 +90,6 @@
   .button-84:focus {
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 3px;
   }
-
-  @media (max-width: 420px) {
-    .button-84 {
-      height: 38px;
-    }
-  }
 }
 @media screen and (max-width: 905px) {
   .BrieflyInterviewBox {
@@ -114,12 +108,15 @@
       height: auto;
       width: 100%;
     }
+    &__innerWrap {
+      gap: 2vw;
+    }
     &__title {
       font-size: 5vw;
       text-align: center;
     }
     &__text {
-      font-size: 4vw;
+      font-size: $fontSize4;
     }
     &__wrapBlock {
       display: grid;

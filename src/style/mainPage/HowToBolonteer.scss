@@ -5,7 +5,7 @@
   align-items: flex-start;
   gap: 2vw;
   &__title {
-    font-size: 2vw;
+    font-size: $fontSize2;
   }
   &__text {
     font-size: 1.5vw;
@@ -15,7 +15,7 @@
 @media screen and (max-width: 1024px) {
   .WrapTextVolonteer {
     &__title {
-      font-size: 3vw;
+      font-size: $fontSize3;
     }
     &__text {
       font-size: 2.5vw;
@@ -32,7 +32,7 @@
       font-size: 5vw;
     }
     &__text {
-      font-size: 4vw;
+      font-size: $fontSize4;
       line-height: 5.5vw;
     }
   }

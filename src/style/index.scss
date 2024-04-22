@@ -1,3 +1,7 @@
+$fontSize4: 4vw;
+$fontSize3: 4vw;
+$fontSize2: 4vw;
+
 @import "./Header.scss";
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 @import "./volontersPageStyle/VolontersContact.scss";
@@ -6,6 +10,7 @@
 @import "./mainPage/LinkToInterview.scss";
 @import "./mainPage/HowToBolonteer.scss";
 @import "./Interview/Intertview.scss";
+
 * {
   margin: 0;
   padding: 0;
